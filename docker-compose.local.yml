@@ -1,21 +1,19 @@
-version: '3.8'
-
 networks:
   app-network:
 
 services:
   frontend:
-    build: ./frontend
-    environment:
-      - "NODE_ENV=development"
-      - "APP_MODE=local"
+    ports:
+      - "3000:3000"
+    user: node
+    build: 
+      context: ./frontend
+      dockerfile: Dockerfile
     command: >
       sh -c "npm i && npm run dev"
     volumes:
       - ./frontend:/frontend
       - ./frontend/node_modules:/frontend/node_modules
-    ports:
-      - "3000:3000"
     networks:
       - app-network
     restart: always
