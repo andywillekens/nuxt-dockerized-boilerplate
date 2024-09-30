@@ -13,7 +13,7 @@ services:
       sh -c "npm i && npm run dev"
     volumes:
       - ./app/frontend:/frontend
-      - ./app/frontend/node_modules:/frontend/node_modules
+      - ./app/frontend/node_modules:/app/frontend/node_modules
     networks:
       - app-network
     restart: always
@@ -29,7 +29,7 @@ services:
       sh -c "npm i && npm run start"
     volumes:
       - ./app/server:/server
-      - ./app/server/node_modules:/server/node_modules
+      - ./app/server/node_modules:/app/server/node_modules
     networks:
       - app-network
     restart: always
