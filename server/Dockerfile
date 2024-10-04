@@ -5,6 +5,7 @@ RUN mkdir -p /server/node_modules && chown -R node:node /server
 WORKDIR /server
 
 COPY package*.json ./
+RUN chmod 777 package*.json
 
 USER node
 
