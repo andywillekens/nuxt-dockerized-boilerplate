@@ -1,0 +1,37 @@
+networks:
+  app-network:
+
+services:
+  frontend:
+    ports:
+      - '3000:3000'
+    user: node
+    build:
+      dockerfile: Dockerfile
+      context: ./frontend
+    command: >
+      sh -c "npm i && npm run dev"
+    volumes:
+      - ./frontend:/frontend
+      - ./frontend/node_modules:/frontend/node_modules
+    networks:
+      - app-network
+    restart: always
+
+  server:
+    ports:
+      - '8080:8080'
+    user: node
+    build:
+      dockerfile: Dockerfile
+      context: ./server
+    command: >
+      sh -c "npm i && npm run dev"
+    volumes:
+      - ./server:/server
+      - ./server/node_modules:/server/node_modules
+    networks:
+      - app-network
+    restart: always
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
