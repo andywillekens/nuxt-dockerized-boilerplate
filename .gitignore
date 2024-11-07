@@ -1,0 +1,12 @@
+**/node_modules
+
+**/.vscode
+**/.idea
+
+*/.nuxt
+*/package-lock.json
+
+.DS_Store
+*.sql
+.data
+.env
