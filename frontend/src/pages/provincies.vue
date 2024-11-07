@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-  // const server = useRuntimeConfig().public.API_URL
-  const server = 'http://host.docker.internal:8080'
+  // TODO: Fix client/server url 
+  const server = useRuntimeConfig().public.SERVER_URL
 
   const {
     data: provinces,
@@ -17,15 +17,17 @@
 </script>
 
 <template>
-  <h1>Alle provincies in 🇳🇱</h1>
-  <p v-if="pending">Loading...</p>
-  <p v-else-if="error">Error: {{ error }}</p>
-  <ul v-else>
-    <li v-for="province in provinces || []" :key="province.id">
-      <h3>{{ province.name }}</h3>
-      <p>Capital: {{ province.capital }}</p>
-      <p>Population: {{ province.population }}</p>
-      <p>Size in km2: {{ province.size }}</p>
-    </li>
-  </ul>
+  <section class="container">
+    <h1>Alle provincies in 🇳🇱</h1>
+    <p v-if="pending">Loading...</p>
+    <p v-else-if="error">Error: {{ error }}</p>
+    <ul v-else>
+      <li v-for="province in provinces || []" :key="province.id">
+        <h3>{{ province.name }}</h3>
+        <p>Capital: {{ province.capital }}</p>
+        <p>Population: {{ province.population }}</p>
+        <p>Size in km2: {{ province.size }}</p>
+      </li>
+    </ul>
+  </section>
 </template>
