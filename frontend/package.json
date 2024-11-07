@@ -5,6 +5,10 @@
     "dev": "nuxt dev"
   },
   "dependencies": {
-    "nuxt": "3.13.1"
+    "@nuxt/fonts": "^0.10.2",
+    "@nuxt/icon": "^1.6.1",
+    "@nuxtjs/tailwindcss": "^6.12.2",
+    "@vueuse/nuxt": "^11.2.0",
+    "nuxt": "^3.13.1"
   }
 }
