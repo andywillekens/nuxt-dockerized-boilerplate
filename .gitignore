@@ -8,5 +8,5 @@
 
 .DS_Store
 *.sql
-
+.data
 .env
