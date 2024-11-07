@@ -1,8 +1,9 @@
 FROM node:20.17.0
 
-WORKDIR /app/frontend
+WORKDIR /frontend
 
 COPY package*.json ./
+RUN chmod 777 package*.json
 
 RUN npm install
 

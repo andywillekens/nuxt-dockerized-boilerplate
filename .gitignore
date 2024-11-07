@@ -3,8 +3,10 @@
 **/.vscode
 **/.idea
 
-app/*/.nuxt
-app/*/package-lock.json
+*/.nuxt
+*/package-lock.json
 
 .DS_Store
 *.sql
+.data
+.env
