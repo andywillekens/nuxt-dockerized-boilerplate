@@ -21,7 +21,7 @@ Run the following command: `docker compose -f docker-compose.local.yml up`
 - [ ] ~I want to add GraphQL to the express back-end~
 - [ ] ~I want to fetch and display the GraphQL data~
 - [ ] ~I want to seperate the GraphQL queries~
-- [ ] I want to install and use Tailwind out of the box
+- [x] I want to install and use Tailwind out of the box
 - [ ] I want to set up a minimal starter style
 - [ ] I want to test wich settings are actually used, cleaning up Dockerfile & docker-compose.local.yml
 - [ ] I want to also deploy this on vercel or any other service without docker causing issues.

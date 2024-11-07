@@ -1,5 +1,6 @@
 <script lang="ts" setup>
-  const server = useRuntimeConfig().public.API_URL
+  // const server = useRuntimeConfig().public.API_URL
+  const server = 'http://host.docker.internal:8080'
 
   const {
     data: provinces,

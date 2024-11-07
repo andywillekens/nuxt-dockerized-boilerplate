@@ -2,7 +2,7 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4
   },
-
+  modules: ['@nuxtjs/tailwindcss', '@vueuse/nuxt', '@nuxt/fonts', '@nuxt/icon'],
   runtimeConfig: {
     public: {
       API_URL:
@@ -12,5 +12,7 @@ export default defineNuxtConfig({
 
   router: { options: { strict: true } },
   srcDir: 'src/',
-  modules: ['@nuxtjs/tailwindcss', '@vueuse/nuxt', '@nuxt/fonts', '@nuxt/icon']
+  tailwindcss: {
+    css: ['~/assets/css/tailwind.css']
+  }
 })

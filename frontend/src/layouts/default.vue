@@ -1,4 +1,4 @@
 <template>
-  <a href="/">Home</a>
+  <Header />
   <NuxtPage />
 </template>
