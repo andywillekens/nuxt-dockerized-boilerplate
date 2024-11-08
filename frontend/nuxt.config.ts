@@ -1,5 +1,3 @@
-console.log(process.server)
-
 export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4
@@ -7,7 +5,7 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', '@vueuse/nuxt', '@nuxt/fonts', '@nuxt/icon'],
   runtimeConfig: {
     public: {
-      SERVER_URL: process.env.SERVER_URL || 'http://localhost:8080'
+      API_URL: process.env.API_URL
     }
   },
   router: { options: { strict: true } },
