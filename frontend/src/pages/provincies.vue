@@ -1,17 +1,18 @@
 <script lang="ts" setup>
-  // TODO: Fix client/server url 
-  const server = useRuntimeConfig().public.SERVER_URL
+  const config = useRuntimeConfig()
+
+  const serverUrl = config.public.SERVER_URL
 
   const {
     data: provinces,
     refresh,
     pending,
     error
-  } = useFetch(`${server}/provinces`, {
+  } = useFetch(`${serverUrl}/provinces`, {
     method: 'GET',
     immediate: true,
     onResponse() {
-      console.log('Response received')
+      console.log('Houston, we have a response!')
     }
   })
 </script>

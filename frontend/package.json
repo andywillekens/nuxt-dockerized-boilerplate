@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.0.1",
   "scripts": {
-    "dev": "nuxt dev"
+    "dev": "nuxt dev --hostname 0.0.0.0"
   },
   "dependencies": {
     "@nuxt/fonts": "^0.10.2",

@@ -111,6 +111,6 @@ app.get('/provinces', function (req, res) {
   res.json(provinces)
 })
 
-app.listen(8080, function () {
+app.listen(8080, '0.0.0.0', () => {
   console.log('Example app listening on port 8080!')
 })
