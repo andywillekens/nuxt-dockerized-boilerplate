@@ -12,7 +12,10 @@
 <template>
   <section class="container">
     <h1>Fetching data</h1>
-    <p>The following data is fetched through the Nuxt API.</p>
+    <p>
+      The following <NuxtLink to="http://localhost:3000/api/provinces">data</NuxtLink> is fetched
+      through the Nuxt API.
+    </p>
     <p v-if="pending" class="flex items-center gap-2 text-purple-500">
       <Icon name="svg-spinners:180-ring" /> Fetching data..
     </p>
