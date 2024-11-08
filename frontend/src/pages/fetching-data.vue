@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+  // TODO: Add typechecking
   const config = useRuntimeConfig()
   const serverUrl = config.public.API_URL
 
