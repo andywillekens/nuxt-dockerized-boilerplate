@@ -1,4 +1,5 @@
 <template>
-  <a href="/">Home</a>
+  <AppHeader />
   <NuxtPage />
+  <slot />
 </template>

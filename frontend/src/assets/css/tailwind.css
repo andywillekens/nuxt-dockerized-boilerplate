@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply h-auto min-h-screen font-body;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply my-4 font-head font-semibold text-black [&>:not(:first-child)]:pt-8;
+  }
+
+  h1 {
+    @apply text-4xl;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
+
+  p {
+    @apply mb-4 text-base;
+  }
+
+  a {
+    @apply font-light text-purple-500;
+  }
+
+  nav a {
+    @apply flex items-center gap-1 border-b-2 border-transparent py-1 transition-colors duration-200 hover:border-purple-900 hover:text-purple-900;
+  }
+
+  a[aria-current='page'] {
+    @apply border-purple-500;
+  }
+}
+@layer components {
+}
+@layer utilities {
+}
