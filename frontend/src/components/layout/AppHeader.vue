@@ -7,9 +7,9 @@
           <Icon name="ph:heart-straight-duotone" class="align-middle text-2xl text-red-400" />
           Docker
         </h1>
-        <nav class="flex gap-4 self-end text-md">
+        <nav class="flex gap-6 self-end text-md">
           <NuxtLink to="/"><Icon name="ph:house-duotone" />Home</NuxtLink>
-          <NuxtLink to="/provinces"><Icon name="ph:map-pin-line-duotone" /> Provinces</NuxtLink>
+          <NuxtLink to="/fetching-data"><Icon name="ph:dog-duotone" /> Fetching data</NuxtLink>
         </nav>
       </div>
     </div>
