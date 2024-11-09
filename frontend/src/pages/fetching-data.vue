@@ -1,23 +1,34 @@
 <script lang="ts" setup>
-  // TODO: Add typechecking
+  interface Province {
+    id: number
+    name: string
+    capital: string
+    population: number
+    size: number
+  }
+
+  interface ProvincesData {
+    provinces: Province[]
+  }
+
   const config = useRuntimeConfig()
-  const serverUrl = config.public.API_URL
+  const apiUrl = config.public.API_URL
 
   const {
     data: provinces,
-    pending,
+    status,
     error
-  } = useAsyncData('provinces', () => $fetch(`${serverUrl}/api/provinces`))
+  } = useAsyncData<ProvincesData>('provinces', () => $fetch(`${apiUrl}/provinces`))
 </script>
 
 <template>
   <section class="container">
     <h1>Fetching data</h1>
     <p>
-      The following <NuxtLink :to="`${serverUrl}/api/provinces`">data</NuxtLink> is fetched through
-      the Nuxt API.
+      The following <NuxtLink :to="`${apiUrl}/provinces`">data</NuxtLink> is fetched through the
+      Nuxt API.
     </p>
-    <p v-if="pending" class="flex items-center gap-2 text-purple-500">
+    <p v-if="status === 'pending'" class="flex items-center gap-2 text-purple-500">
       <Icon name="svg-spinners:180-ring" /> Fetching data..
     </p>
     <p v-else-if="error">Error: {{ error.message }}</p>

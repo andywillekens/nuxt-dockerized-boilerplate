@@ -1,28 +1,52 @@
-# docker-example
+# Dockerized Nuxt 4 Boilerplate
 
-This is going to be a test project to get familiar with setting up projects with docker.
+This boilerplate provides a streamlined setup for running a Nuxt 4 project in a Docker environment. Containerizing this project enables consistent, dependency-free local development across any machine.
 
-### Requirements
+## Requirements
 
-- docker
-- docker compose
-- Prettier - Code formatter (vs code plugin)
-- Tailwind CSS IntelliSense (vs code plugin)
+Ensure you have the following installed:
 
-### Start up local development
+- **Docker** - For containerization
+- **Docker Compose** - For orchestrating multiple containers
+- **Prettier** - Code formatter (recommended VS Code plugin)
+- **Tailwind CSS IntelliSense** - VS Code plugin for Tailwind class suggestions and completions
+- **TypeScript and JavaScript Language Features** - Bundled with VS Code; ensure it's enabled for optimal support
 
-Run the following command: `docker compose -f docker-compose.local.yml up`
 
-# As a developer
+## Getting Started
 
-- [x] I first want to set up the project's local git to use the correct account.
-- [x] I want to create a new feature branch from master.
-- [x] I want to simply spin up this docker container and have my application ready to work with.
-- [x] I want to create a basic setup that connect to the api server and retrieve and show data
-- [ ] ~I want to add GraphQL to the API~
-- [ ] ~I want to fetch and display the GraphQL data~
-- [ ] ~I want to seperate the GraphQL queries~
-- [x] I want to install and use Tailwind out of the box
-- [x] I want to set up a minimal starter style
-- [x] I want to test wich settings are actually used, cleaning up Dockerfile & docker-compose.local.yml
-- [ ] I want to also deploy this on vercel or any other service without docker causing issues.
+To start the development server locally:
+
+```bash
+docker compose -f docker-compose.local.yml up
+```
+
+This command builds and launches the Nuxt development environment within Docker. Once started, you can access the project in your browser at [http://localhost:3000](http://localhost:3000).
+
+
+## Additional Information
+
+- **Hot Reloading**: The container is configured for hot reloading, allowing code changes to reflect instantly in your browser.
+- **File Structure**: This boilerplate follows standard Nuxt 4 conventions, making it easy to expand and customize.
+- **VS Code Integration**: We recommend using the Prettier and Tailwind CSS IntelliSense plugins for a smoother development experience.
+- **Nuxt Plugins**: The boilerplate includes useful Nuxt plugins by default, such as VueUse, NuxtIcon, NuxtFonts, and Tailwind CSS.
+
+## Stopping the Development Environment
+
+To stop and remove the running containers:
+
+```bash
+docker compose -f docker-compose.local.yml down
+```
+
+## Troubleshooting
+
+If you encounter any issues, try rebuilding the containers:
+
+```bash
+docker compose -f docker-compose.local.yml up --build
+```
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests to enhance the setup.
