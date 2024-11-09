@@ -19,10 +19,10 @@ Run the following command: `docker compose -f docker-compose.local.yml up`
 - [x] I want to create a new feature branch from master.
 - [x] I want to simply spin up this docker container and have my application ready to work with.
 - [x] I want to create a basic setup that connect to the api server and retrieve and show data
-- [ ] ~I want to add GraphQL to the API~
-- [ ] ~I want to fetch and display the GraphQL data~
-- [ ] ~I want to seperate the GraphQL queries~
 - [x] I want to install and use Tailwind out of the box
 - [x] I want to set up a minimal starter style
 - [x] I want to test wich settings are actually used, cleaning up Dockerfile & docker-compose.local.yml
-- [ ] I want to also deploy this on vercel or any other service without docker causing issues.
+- [X] I want to also deploy this on vercel or any other service without docker causing issues.
+- [ ] I want to add GraphQL to the nuxt API
+- [ ] I want to fetch and display the GraphQL data
+- [ ] I want to seperate the GraphQL queries
