@@ -7,7 +7,7 @@
 </script>
 
 <template>
-  <NuxtLayout :name="default">
+  <NuxtLayout>
     <section class="container">
       <h1>Wait? What..</h1>
       <p>

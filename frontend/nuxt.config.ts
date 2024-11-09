@@ -3,6 +3,9 @@ export default defineNuxtConfig({
     compatibilityVersion: 4
   },
   modules: ['@nuxtjs/tailwindcss', '@vueuse/nuxt', '@nuxt/fonts', '@nuxt/icon'],
+  typescript: {
+    typeCheck: true
+  },
   runtimeConfig: {
     public: {
       API_URL: process.env.API_URL
@@ -11,7 +14,8 @@ export default defineNuxtConfig({
   router: { options: { strict: true } },
   srcDir: 'src/',
   tailwindcss: {
-    css: ['~/assets/css/tailwind.css']
+    cssPath: ['~/assets/css/tailwind.css', { injectPosition: 'first' }],
+    configPath: 'tailwind.config'
   },
   components: [
     {

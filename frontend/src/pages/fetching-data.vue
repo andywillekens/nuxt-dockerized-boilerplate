@@ -22,7 +22,7 @@
     </p>
     <p v-else-if="error">Error: {{ error.message }}</p>
     <ul v-else class="grid grid-cols-2 md:grid-cols-4">
-      <li v-for="province in provinces.provinces" :key="province.id">
+      <li v-for="province in provinces?.provinces" :key="province.id">
         <h3>{{ province.name }}</h3>
         <p>
           Capital: {{ province.capital }}<br />
