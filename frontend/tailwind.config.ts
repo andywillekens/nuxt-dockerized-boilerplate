@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export default <Config>{
+export default {
   theme: {
     extend: {
       screens: {
