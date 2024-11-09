@@ -8,7 +8,7 @@
     <p>
       Before you continue, make sure you have read the documentation over at
       <NuxtLink
-        to="https://github.com/andywillekens/docker-example?tab=readme-ov-file#docker-example"
+        to="https://github.com/andywillekens/nuxt-dockerized-boilerplate?tab=readme-ov-file#docker-example"
       >
         GitHub </NuxtLink
       >.
