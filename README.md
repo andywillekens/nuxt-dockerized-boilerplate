@@ -1,4 +1,4 @@
-# Dockerized Nuxt 4 Boilerplate
+# Nuxt 4 Dockerized Boilerplate
 
 This boilerplate provides a streamlined setup for running a Nuxt 4 project in a Docker environment. Containerizing this project enables consistent, dependency-free local development across any machine.
 
