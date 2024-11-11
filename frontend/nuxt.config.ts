@@ -2,7 +2,7 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4
   },
-  modules: ['@nuxtjs/tailwindcss', '@vueuse/nuxt', '@nuxt/fonts', '@nuxt/icon'],
+  modules: ['@nuxtjs/tailwindcss', '@vueuse/nuxt', '@nuxt/fonts', '@nuxt/icon', '@pinia/nuxt'],
   typescript: {
     typeCheck: true
   },
@@ -16,6 +16,9 @@ export default defineNuxtConfig({
   tailwindcss: {
     cssPath: ['~/assets/css/tailwind.css', { injectPosition: 'first' }],
     configPath: 'tailwind.config'
+  },
+  pinia: {
+    storesDirs: ['~/stores/**']
   },
   components: [
     {

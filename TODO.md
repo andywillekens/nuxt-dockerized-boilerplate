@@ -1,5 +1,6 @@
 # As a developer
-
+- [ ] I want to add Pinia as a store
+ 
 # As a user
 
 # Done
