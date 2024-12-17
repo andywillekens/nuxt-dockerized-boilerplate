@@ -28,7 +28,6 @@ export default defineNuxtConfig({
     storesDirs: ['./src/stores/**']
   },
   formkit: {
-    // Experimental support for auto loading (see note):
     autoImport: true
   },
   components: [
