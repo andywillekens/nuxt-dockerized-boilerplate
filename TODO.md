@@ -1,5 +1,7 @@
 # As a developer
-
+- [x] Add Pinia
+- [x] Add Vueuse and persist data via localstorage
+ 
 # As a user
 
 # Done
