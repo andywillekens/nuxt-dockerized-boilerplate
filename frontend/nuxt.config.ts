@@ -2,7 +2,14 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4
   },
-  modules: ['@nuxtjs/tailwindcss', '@vueuse/nuxt', '@nuxt/fonts', '@nuxt/icon', '@pinia/nuxt'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@vueuse/nuxt',
+    '@nuxt/fonts',
+    '@nuxt/icon',
+    '@pinia/nuxt',
+    '@formkit/nuxt'
+  ],
   typescript: {
     typeCheck: true
   },
@@ -18,7 +25,11 @@ export default defineNuxtConfig({
     configPath: 'tailwind.config'
   },
   pinia: {
-    storesDirs: ['~/stores/**']
+    storesDirs: ['./src/stores/**']
+  },
+  formkit: {
+    // Experimental support for auto loading (see note):
+    autoImport: true
   },
   components: [
     {

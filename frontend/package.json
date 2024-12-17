@@ -8,6 +8,7 @@
     "vue": "latest"
   },
   "dependencies": {
+    "@formkit/nuxt": "^1.6.9",
     "@nuxt/fonts": "^0.10.2",
     "@nuxt/icon": "^1.6.1",
     "@nuxtjs/tailwindcss": "^6.12.2",

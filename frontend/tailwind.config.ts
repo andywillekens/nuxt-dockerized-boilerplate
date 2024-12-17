@@ -155,6 +155,7 @@ export default {
     'srcDir/{A,a}pp.{vue,js,jsx,mjs,ts,tsx}',
     'srcDir/{E,e}rror.{vue,js,jsx,mjs,ts,tsx}',
     'srcDir/app.config.{js,ts,mjs}',
+    'srcDir/formkit.config.{js,ts,mjs}',
     'srcDir/app/spa-loading-template.html'
   ],
   plugins: []

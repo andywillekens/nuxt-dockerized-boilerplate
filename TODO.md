@@ -1,5 +1,6 @@
 # As a developer
-- [ ] I want to add Pinia as a store
+- [x] Add Pinia
+- [x] Add Vueuse and persist data via localstorage
  
 # As a user
 
