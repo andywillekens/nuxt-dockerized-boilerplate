@@ -4,8 +4,13 @@
 
 @layer base {
   html,
-  body {
-    @apply h-auto min-h-screen font-body;
+  body,
+  div#__nuxt {
+    @apply flex h-auto min-h-screen flex-col font-body;
+  }
+
+  main {
+    @apply flex-grow;
   }
 
   h1,
